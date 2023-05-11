@@ -1,4 +1,5 @@
 header {
+  @include dflex;
   height: $header-h;
 
   background-color: black;
@@ -10,11 +11,96 @@ header {
   z-index: 1;
 
   .header-logo {
-    margin-right: 2rem;
-    line-height: $header-h;
-
-    text-align: center;
     color: white;
+  }
+
+  .left {
+    display: none;
+    margin-left: 2rem;
+
+    @include tablet {
+      display: block;
+
+      > label {
+        font-size: 2rem;
+        background-color: transparent;
+        border: none;
+        color: white;
+
+        &:hover {
+          cursor: pointer;
+          color: rgb(189, 189, 189);
+        }
+      }
+    }
+
+    @include mobile {
+      display: block;
+
+      > label {
+        font-size: 2rem;
+        background-color: transparent;
+        border: none;
+        color: white;
+
+        &:hover {
+          cursor: pointer;
+          color: rgb(189, 189, 189);
+        }
+      }
+    }
+  }
+
+  .right {
+    margin-right: 2rem;
     font-size: 2.5rem;
   }
+
+  @include tablet {
+    @include dflex(center, space-between);
+  }
+
+  @include mobile {
+    @include dflex(center, space-between);
+  }
+}
+
+// sidebar
+.sidebar {
+  position: fixed;
+  top: $header-h;
+  left: -25rem;
+  width: 25rem;
+  height: 100%;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+#sidebar-checkbox:checked ~ .sidebar {
+  left: 0;
+}
+
+#sidebar-checkbox:checked ~ .nav-overlay {
+  visibility: visible;
+  background-color: rgba(0, 0, 0, 0.384);
+}
+
+input {
+  visibility: hidden;
+}
+
+// nav menu
+.nav-welcome,
+.nav-dashboard {
+  color: black;
+}
+
+.nav-overlay {
+  visibility: hidden;
+
+  position: fixed;
+  inset: $header-h 0 0;
+
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
 }

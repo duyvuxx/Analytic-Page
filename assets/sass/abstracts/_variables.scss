@@ -1,5 +1,19 @@
 // Header-height
 $header-h: 4.5rem;
 
-// Font color 
+// Font color
 $font-color: rgb(53, 53, 53);
+
+// Values for responsive styles
+$tablet-max-w: 63.9375em; /* 1023px */
+$tablet-min-w: 46.25em; /* 740px */
+$mobile-width: 46.1875em; /* 739px */
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(sansation_bold.woff2) format("woff2"),
+    url(sansation_bold.woff) format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: fallback;
+}

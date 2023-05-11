@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Analytic</title>
     <link rel="stylesheet" href="./assets/css/main.min.css" />
     <!-- font awesome  -->
     <link
@@ -17,7 +17,81 @@
   <body>
     <div id="app">
       <header>
-        <div class="header-logo">
+        <div class="header-logo left">
+          <label for="sidebar-checkbox"
+            ><i class="fa-solid fa-bars"></i> Menu</label
+          >
+          <input type="checkbox" id="sidebar-checkbox" />
+          <div class="nav-overlay"></div>
+          <div class="sidebar">
+            <div class="aside-welcome nav-welcome">
+              <div class="avatar">
+                <div class="avatar-wrapper">
+                  <img src="./assets/imgs/avatar1.png" alt="avatar_1" />
+                </div>
+              </div>
+
+              <div class="welcome">
+                <div class="welcome-title">
+                  <h4>Welcome,<span> User</span></h4>
+                </div>
+                <ul class="welcome-icon">
+                  <li class="welcome-icon-items">
+                    <i class="fa-solid fa-envelope"></i>
+                  </li>
+                  <li class="welcome-icon-items">
+                    <i class="fa-solid fa-user"></i>
+                  </li>
+                  <li class="welcome-icon-items">
+                    <i class="fa-solid fa-gears"></i>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="aside-dashboard nav-dashboard">
+              <h3>Dashboard</h3>
+              <ul class="nav-list">
+                <li class="nav-list-items">
+                  <a href="#"
+                    ><i class="fa-solid fa-user-group"></i> Overview</a
+                  >
+                </li>
+                <li class="nav-list-items">
+                  <a href="#"><i class="fa-regular fa-eye"></i> Views</a>
+                </li>
+                <li class="nav-list-items">
+                  <a href="#"><i class="fa-solid fa-globe"></i> Traffic</a>
+                </li>
+                <li class="nav-list-items">
+                  <a href="#"><i class="fa-solid fa-circle-dot"></i> Geo</a>
+                </li>
+                <li class="nav-list-items">
+                  <a href="#"
+                    ><i class="fa-solid fa-arrow-up-from-bracket"></i> Orders</a
+                  >
+                </li>
+                <li class="nav-list-items">
+                  <a href="#"><i class="fa-solid fa-newspaper"></i> News</a>
+                </li>
+                <li class="nav-list-items">
+                  <a href="#"
+                    ><i class="fa-solid fa-share-nodes"></i> General</a
+                  >
+                </li>
+                <li class="nav-list-items">
+                  <a href="#"
+                    ><i class="fa-solid fa-clock-rotate-left"></i> History</a
+                  >
+                </li>
+                <li class="nav-list-items">
+                  <a href="#"><i class="fa-solid fa-gears"></i>Settings</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="header-logo right">
           <h3><i class="fa-regular fa-money-bill-trend-up"></i></h3>
         </div>
       </header>

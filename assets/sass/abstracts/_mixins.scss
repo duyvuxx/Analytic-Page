@@ -24,3 +24,22 @@
   border-radius: 2.5rem;
   background-color: $backgroundColor;
 }
+
+// Responsive
+@mixin tablet_and_mobile {
+  @media (max-width: $tablet-max-w) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: $tablet-min-w) and (max-width: $tablet-max-w) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: $mobile-width) {
+    @content;
+  }
+}
