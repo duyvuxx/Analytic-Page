@@ -356,6 +356,20 @@ section {
 .aside-dashboard .nav-list-items:first-child:active {
   background-color: #acacac;
 }
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+  .aside-dashboard .nav-list {
+    width: 25rem;
+    max-height: 25rem;
+    overflow-y: auto;
+  }
+}
+@media (max-width: 46.1875em) {
+  .aside-dashboard .nav-list {
+    width: 25rem;
+    max-height: 20rem;
+    overflow-y: auto;
+  }
+}
 
 .content {
   max-width: 100%;

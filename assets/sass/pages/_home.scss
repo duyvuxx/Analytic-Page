@@ -140,6 +140,18 @@ section {
         background-color: #acacac;
       }
     }
+
+    @include tablet {
+      width: 25rem;
+      max-height: 25rem;
+      overflow-y: auto;
+    }
+
+    @include mobile {
+      width: 25rem;
+      max-height: 20rem;
+      overflow-y: auto;
+    }
   }
 }
 
