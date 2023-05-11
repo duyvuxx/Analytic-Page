@@ -1,0 +1,26 @@
+@mixin dflex($alignItems: center, $justifyContent: center) {
+  display: flex;
+  align-items: $alignItems;
+  justify-content: $justifyContent;
+}
+
+// bar configuration
+@mixin barConf($content, $width, $backgroundColor) {
+  content: $content;
+  position: absolute;
+  inset: 0;
+  width: $width;
+  background-color: $backgroundColor;
+  color: white;
+}
+
+// ref bar configuration
+@mixin refConf($backgroundColor) {
+  content: "";
+  position: absolute;
+  inset: 105% 0 0;
+
+  height: 0.5rem;
+  border-radius: 2.5rem;
+  background-color: $backgroundColor;
+}

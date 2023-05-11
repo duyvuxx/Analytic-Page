@@ -1,0 +1,46 @@
+footer {
+  margin: 3rem auto;
+}
+
+.social {
+  @include dflex;
+  gap: 1.5rem;
+
+  &-items {
+    font-size: 4rem;
+
+    a {
+      display: inline-block;
+
+      color: black;
+
+      transition: all 0.2s ease-in-out;
+      will-change: transform;
+
+      &:hover {
+        transform: scale(1.15);
+        color: rgb(85, 85, 85);
+      }
+    }
+  }
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 1rem;
+
+  > a {
+    display: inline-block;
+
+    color: black;
+
+    transition: all 0.1s ease-in;
+    will-change: transform;
+
+    &:hover {
+      font-style: oblique;
+      transform: translateX(0.2rem);
+      color: rgb(85, 85, 85);
+    }
+  }
+}
